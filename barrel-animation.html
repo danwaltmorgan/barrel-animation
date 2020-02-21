@@ -25,34 +25,20 @@
       <div class="ring" id="top-ring"></div>
       <div class="body">
         <div class="label">
-          <img src="../images/bbb-logo.png" alt="big blue barrel logo">
+          <img src="../web-site/images/bbb-logo.png" alt="big blue barrel logo">
         </div>
       </div>
       <div class="ring" id="bottom-ring"></div>
       <div class="arm-div">
         <div class="arm" id="left-arm"></div>
-        <div class="arm" id="right-arm"></div>
+        <div class="arm" id="right-arm">
+          <!-- <div class="arm" id="upper-right-arm"></div> -->
+          <!-- <div class="arm" id="lower-right-arm"></div> -->
+        </div>
       </div>
     </div>
 
-    <script>
-      const lid = document.querySelector('.top');
-      const arm = document.querySelector('#right-arm');
-
-      function swing() {
-        if (!lid.classList.contains('open')) {
-          lid.classList.add('open')
-          setTimeout(move => {
-            arm.style.transform = "rotate(-120deg)"
-          }, 700)
-        } else {
-          lid.classList.remove('open')
-          arm.style.transform = "rotate(-45deg)"
-
-        }
-      }
-
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>
