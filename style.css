@@ -112,14 +112,12 @@ img {
 }
 
 .arm {
-  /* width: 1vw; */
-  /* height: 10vw; */
-  /* background: black; */
+
   margin: auto;
   position: relative;
   bottom: 25vw;
   z-index: -1;
-  transform-origin: top;  /*Causes weird placement*/
+  transform-origin: top;  
 }
 
 
@@ -128,7 +126,6 @@ img {
   position: relative;
   right: 15vw;
   transform: rotate(-45deg);
-  /* border: red 1px dashed; */
   transition: transform .7s ease-in-out;
 
 }
