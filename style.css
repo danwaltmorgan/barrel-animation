@@ -5,7 +5,8 @@
   left: -70vw;
 
   transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  /* transform-origin: bottom left; */
+  transform-origin: bottom left;
+  /* transition: all 1.5s ease-in-out; */
   transform: rotate(-20deg)
 }
 .eye-container {
@@ -191,6 +192,7 @@ img {
   height: 10vw;
   border-radius: 50%;
   background: black;
+  transition: all .5s ease-in;
   transform-origin: top;
   transform: rotate(-45deg)
 }
@@ -208,15 +210,16 @@ button {
 }
 
 #trash {
+  margin: auto;
   width: 5vw;
   height: 5vw;
   background-color: brown;
   z-index: 5;
   position: relative;
-  top: 100%;
-  right: 2vw;
-  opacity: 0;
-  transition: all .3s ease-in-out;
+  top: -15vw;
+  right: -18vw;
+  opacity: 1;
+  transition: all .5s ease-in-out;
 }
 
 h1 {

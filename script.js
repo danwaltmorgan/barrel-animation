@@ -14,7 +14,7 @@ function swing() {
   // }, 500)
   if (!lid.classList.contains('open')) {
     setTimeout(open => {
-      trash.style.opacity = "1";
+      grabTrash();
       lid.classList.add('open')
     }, 1000)
     setTimeout(move => {
@@ -35,4 +35,10 @@ function swing() {
     forearm.style.transform = "rotate(45deg)"
     trash.style.right = "2vw"
   }
+}
+
+function grabTrash() {
+  forearm.appendChild(trash)
+  trash.style.top = "10vw"
+  trash.style.right = "2vw"
 }
