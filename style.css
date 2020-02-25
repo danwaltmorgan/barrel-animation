@@ -117,7 +117,7 @@ img {
   position: relative;
   bottom: 25vw;
   z-index: -1;
-  transform-origin: top;  
+  transform-origin: top;
 }
 
 
@@ -193,5 +193,5 @@ button {
 h1 {
   text-align: center;
   position: relative;
-  bottom: 10vw;
+  bottom: 7vw;
 }

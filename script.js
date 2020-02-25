@@ -2,6 +2,7 @@ const lid = document.querySelector('.top');
 const arm = document.querySelector('#right-arm');
 const forearm = document.querySelector("#lower-right-arm");
 const trash = document.querySelector("#trash");
+const barrel = document.querySelector(".barrel")
 
 function swing() {
   if (!lid.classList.contains('open')) {
