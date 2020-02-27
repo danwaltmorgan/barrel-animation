@@ -4,6 +4,8 @@ const forearm = document.querySelector("#lower-right-arm");
 const trash = document.querySelector("#trash");
 const barrel = document.querySelector(".barrel")
 const eye = document.querySelector("#left")
+const hand = document.querySelector("#right-hand");
+const thumb = document.querySelector("#thumb");
 
 function swing() {
   barrel.style.left = "0vw"
@@ -32,8 +34,10 @@ function swing() {
 
   } else {
     lid.classList.remove('open')
-    arm.style.transform = "rotate(-45deg)"
-    forearm.style.transform = "rotate(45deg)"
+    arm.style.transform = "rotate(-65deg)";
+    forearm.style.transform = "rotate(-90deg)";
+    hand.style.display = "none"
+    thumb.style.display = "block"
     trash.style.right = "2vw"
     setTimeout(wink => {
       eye.style.height = "0"

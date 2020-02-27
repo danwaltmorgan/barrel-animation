@@ -163,7 +163,7 @@ img {
   height: 10vw;
   background: black;
   transition: transform .7s ease-in-out;
-  transform-origin: top ;
+  transform-origin: top;
   transform: rotate(45deg);
 }
 
@@ -210,6 +210,12 @@ img {
   transform: rotate(180deg) scaleX(-1);
   right: 190%;
   top: 70%;
+}
+#thumb {
+  transform: rotate(90deg) scaleX(-1);
+  right: 136%;
+  top: 70%;
+  display: none;
 }
 #left-hand {
   transform: rotate(-180deg);
