@@ -9,7 +9,7 @@ const thumb = document.querySelector("#thumb");
 
 function swing() {
   barrel.style.left = "0vw"
-  setTimeout(tip => {
+  setTimeout(() => {
     barrel.style.transform = "rotate(0deg)"
   }, 100)
   // setTimeout(tip => {
@@ -32,20 +32,24 @@ function swing() {
       }, 1000)
     }, 2000)
 
-  } else {
-    lid.classList.remove('open')
-    arm.style.transform = "rotate(-65deg)";
-    forearm.style.transform = "rotate(-90deg)";
-    hand.style.display = "none"
-    thumb.style.display = "block"
-    trash.style.right = "2vw"
-    setTimeout(wink => {
-      eye.style.height = "0"
-    }, 700)
-    setTimeout(wink => {
-      eye.style.height = "1.5vw"
-    }, 1300)
-
+    setTimeout(back => {
+      lid.classList.remove('open')
+      arm.style.transform = "rotate(-65deg)";
+      forearm.style.transform = "rotate(-80deg)";
+      hand.style.display = "none";
+      thumb.style.display = "block";
+      // trash.style.right = "2vw";
+      setTimeout(wink => {
+        eye.style.height = "0"
+      }, 700)
+      setTimeout(wink => {
+        eye.style.height = "1.5vw"
+      }, 1300)
+      setTimeout(move => {
+        barrel.style.left = "100vw"
+        barrel.style.transform = "rotate(-20deg)"
+      }, 2000)
+    }, 3000)
   }
 }
 
