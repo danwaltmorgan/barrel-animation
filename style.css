@@ -1,7 +1,7 @@
 .barrel {
   margin: auto;
   position: relative;
-  top: 20vh;
+  top: 5vh;
   left: -70vw;
 
   transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -115,6 +115,7 @@ img {
   flex-direction: row;
   position: relative;
   bottom: 50%;
+  height: 0;
 }
 .arm-part {
   margin: auto;
@@ -222,7 +223,7 @@ button {
   width: 100px;
   height: 50px;
   position: relative;
-  top: 10vw;
+  top: 1vw;
 }
 .open {
   transform: rotate(-70deg);
@@ -235,7 +236,7 @@ button {
   background-color: brown;
   z-index: 5;
   position: relative;
-  top: -20vw;
+  top: -15vw;
   right: -15vw;
   opacity: 1;
   transition: all .5s ease-in-out;
@@ -244,5 +245,5 @@ button {
 h1 {
   text-align: center;
   position: relative;
-  bottom: 7vw;
+  /* bottom: 7vw; */
 }
