@@ -116,6 +116,9 @@ img {
   position: relative;
   bottom: 50%;
 }
+.arm-part {
+  margin: auto;
+}
 
 .arm {
 
@@ -147,13 +150,13 @@ img {
   border-radius: 50%;
   background: black;
   position: relative;
-  left: .5vw;
+  /* left: .5vw; */
   top: -1vw;
 }
 #lower-right-arm {
   position: relative;
   top: -2vw;
-  left: 1vw;
+  left: .3vw;
   width: 2vw;
   border-radius: 50%;
   height: 10vw;
@@ -197,6 +200,22 @@ img {
   transform: rotate(-45deg)
 }
 
+.hands {
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+}
+#right-hand {
+  transform: rotate(180deg) scaleX(-1);
+  right: 190%;
+  top: 70%;
+}
+#left-hand {
+  transform: rotate(-180deg);
+  right: 190%;
+  top: 70%;
+}
+
 button {
   display: block;
   margin: auto;
@@ -216,8 +235,8 @@ button {
   background-color: brown;
   z-index: 5;
   position: relative;
-  top: -15vw;
-  right: -18vw;
+  top: -20vw;
+  right: -15vw;
   opacity: 1;
   transition: all .5s ease-in-out;
 }

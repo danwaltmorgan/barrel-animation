@@ -3,6 +3,7 @@ const arm = document.querySelector('#right-arm');
 const forearm = document.querySelector("#lower-right-arm");
 const trash = document.querySelector("#trash");
 const barrel = document.querySelector(".barrel")
+const eye = document.querySelector("#left")
 
 function swing() {
   barrel.style.left = "0vw"
@@ -23,7 +24,7 @@ function swing() {
     }, 1700)
 
     setTimeout(fall => {
-      trash.style.right = "-8vw";
+      trash.style.right = "-10vw";
       setTimeout(disapear => {
         trash.style.opacity = "0"
       }, 1000)
@@ -34,11 +35,18 @@ function swing() {
     arm.style.transform = "rotate(-45deg)"
     forearm.style.transform = "rotate(45deg)"
     trash.style.right = "2vw"
+    setTimeout(wink => {
+      eye.style.height = "0"
+    }, 700)
+    setTimeout(wink => {
+      eye.style.height = "1.5vw"
+    }, 1300)
+
   }
 }
 
 function grabTrash() {
   forearm.appendChild(trash)
-  trash.style.top = "10vw"
+  trash.style.top = "2vw"
   trash.style.right = "2vw"
 }
