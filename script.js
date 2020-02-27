@@ -28,7 +28,7 @@ function swing() {
     setTimeout(fall => {
       trash.style.right = "-10vw";
       setTimeout(disapear => {
-        trash.style.opacity = "0"
+        trash.style.display = "none"
       }, 1000)
     }, 2000)
 
