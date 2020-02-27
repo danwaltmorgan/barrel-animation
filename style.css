@@ -1,3 +1,8 @@
+body {
+  overflow: hidden;
+  background: lightblue;
+}
+
 .barrel {
   margin: auto;
   position: relative;
@@ -25,6 +30,7 @@
   margin: auto;
   position: relative;
   top: .2vw;
+  background-color: white;
   /* display: none; */
 }
 .pupil {
@@ -226,10 +232,15 @@ img {
 button {
   display: block;
   margin: auto;
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: 75px;
   position: relative;
-  top: 1vw;
+  top: -20vw;
+  transition: all .5s ease-in-out;
+  border-radius: 50px;
+  border: 2px solid black;
+  background: #0aa549;
+  font-size: 24px;
 }
 .open {
   transform: rotate(-70deg);
@@ -237,15 +248,14 @@ button {
 
 #trash {
   margin: auto;
-  width: 5vw;
-  height: 5vw;
-  background-color: brown;
-  z-index: 5;
-  position: relative;
-  top: -15vw;
-  right: -15vw;
+  /* width: 5vw; */
+  /* height: 5vw; */
+  /* background-color: brown; */
+  /* z-index: 5; */
+  /* position: relative; */
+  /* top: -15vw; */
+  /* right: -15vw; */
   opacity: 1;
-  transition: all .5s ease-in-out;
 }
 
 h1 {

@@ -18,8 +18,10 @@ function swing() {
   if (!lid.classList.contains('open')) {
     setTimeout(open => {
       grabTrash();
-      lid.classList.add('open')
-    }, 1000)
+      setTimeout(open => {
+        lid.classList.add('open')
+      }, 800)
+    }, 800)
     setTimeout(move => {
       arm.style.transform = "rotate(-150deg)"
       forearm.style.transform = "rotate(-90deg)"
@@ -48,6 +50,9 @@ function swing() {
       setTimeout(move => {
         barrel.style.left = "100vw"
         barrel.style.transform = "rotate(-20deg)"
+        setTimeout(disapear => {
+          barrel.style.display = "none"
+        }, 1000)
       }, 2000)
     }, 3000)
   }
